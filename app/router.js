@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('helloworld');
   this.route('conditional');
   this.route('student');
+  this.route('friends');
 });
 
 export default Router;

@@ -1,5 +1,10 @@
 <h2 id="title">Welcome to Ember</h2>
-{{hello-world}}
-{{#link-to 'friends' replace=true}}
-  Friends{{/link-to}}<br>
+<br>
+<!-- {{hello-world}} -->
+{{#each model as |friend|}}
+  {{#link-to 'friends' friend}}{{friend.name}}
+    {{/link-to}}<br>
+{{/each}}
 {{outlet}}
+<br>
+<br>
